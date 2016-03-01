@@ -1,0 +1,34 @@
+{
+  "name": "mongodb-js-cli",
+  "description": "Tools for mongodb-js to write excellent CLI&#x27;s",
+  "version": "0.0.0",
+  "scripts": {
+    "fmt": "mongodb-js-fmt",
+    "check": "mongodb-js-precommit",
+    "test": "mocha",
+    "ci": "npm run check && npm test"
+  },
+  "homepage": "http://github.com/mongodb-js/mongodb-js-cli",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mongodb-js/mongodb-js-cli.git"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "clui": "^0.3.1",
+    "debug": "^2.2.0",
+    "figures": "^1.4.0",
+    "yargs": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-mongodb-js": "^1.0.6",
+    "mocha": "^2.3.4",
+    "mongodb-js-fmt": "^0.0.3",
+    "mongodb-js-precommit": "^0.2.8",
+    "pre-commit": "^1.1.2"
+  },
+  "license": "Apache-2.0",
+  "precommit": [
+    "check"
+  ]
+}
